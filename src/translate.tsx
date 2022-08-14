@@ -14,5 +14,5 @@ export default function Translate({
     handleTranslate(value, setTranslation);
   }, [value, language]);
 
-  return translation;
+  return translation.replace(/\n/g, "<br />");
 }
